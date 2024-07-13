@@ -1,0 +1,30 @@
+
+{
+    "speakers": [
+      {
+        "name": "Mr.Sagar Ranshoor",
+        "image": "media/speakers/sagar.png",
+        "role": "Public Speaker & Startup Mentor",
+        "description": "E-cell FCRIT Vashi is an inspiring hub for budding entrepreneurs. It fosters creativity, collaboration, and innovation. Through workshops, events, and mentorship, it empowers students to realize their entrepreneurial dreams."
+      },
+      {
+        "name": "Mr.Yogendra Joshi",
+        "image": "media/speakers/yogendra.jpeg",
+        "role": "Founder and Consultant, MoneyBolism",
+        "description": "The E-Cell at FCRIT Vashi fosters innovation, entrepreneurship, and collaboration, empowering students to transform ideas into ventures. It cultivates a dynamic ecosystem essential for nurturing future leaders and innovators."
+      },
+      {
+        "name": "Mr.Shivkumar Valadi",
+        "image": "media/speakers/shivkumar_valadi.jfif",
+        "role": "Founder, Atri MarCon pvt Ltd",
+        "description": "I see a lot of energy that has a lot of potential if channelised in the right way. Love the initiative of the E-Cell and the industry-student interactions which helps prepare the students for their corporate and entrepreneurial life ahead."
+      },
+      {
+        "name": "Mr.Mahendra Dongre",
+        "image": "media/speakers/mahendra.png",
+        "role": "Examiner of Patents and Designs",
+        "description": "E-Cell FCRIT Vashi is a dynamic platform fostering entrepreneurial spirit. It empowers students with practical skills, mentorship, and networking opportunities, igniting innovation and nurturing future leaders effectively."
+      }
+    ]
+  }
+  

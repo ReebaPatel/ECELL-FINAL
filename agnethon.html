@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="gallery.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <section class="hero-container">
+        <h1><span style="color:#4cf0b1">AGNETHON</span></h1>
+        <p>Agnethon was an exhilarating event that
+            brought together a diverse group of talented programmers, designers, and innovators. Over the course of the
+            event, participants worked tirelessly in teams to develop innovative solutions to real-world problems. The
+            hackathon fostered a spirit of creativity, collaboration, and competition, with participants showcasing
+            their technical skills and ingenuity. Industry experts and mentors were on hand to provide guidance and
+            feedback, ensuring a rich learning experience. Agnethon not only highlighted the exceptional talent within
+            the community but also inspired participants to push the boundaries of what is possible through technology
+            and teamwork.</p>
+
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="gallery-filter">
+                    <span class="filter-item active" data-filter="all">ALL</span>
+                    <span class="filter-item" data-filter="travel">2024</span>
+                    <span class="filter-item" data-filter="photograph">2023</span>
+                    <span class="filter-item" data-filter="watch">2022</span>
+                    <span class="filter-item" data-filter="laptop">2021</span>
+                </div> -->
+            </div>
+            <div class="row">
+
+
+
+                <div class="gallery-item laptop">
+                    <div class="gallery-item-inner">
+                        <img src="media/agnethon/ag (1).jpg" alt="laptop">
+                    </div>
+                </div>
+
+                <div class="gallery-item photograph">
+                    <div class="gallery-item-inner">
+                        <img src="media/agnethon/ag (2).jpg" alt="photograph">
+                    </div>
+                </div>
+
+                <div class="gallery-item watch">
+                    <div class="gallery-item-inner">
+                        <img src="media/agnethon/ag (3).jpg" alt="watch">
+                    </div>
+                </div>
+
+                <div class="gallery-item laptop">
+                    <div class="gallery-item-inner">
+                        <img src="media/agnethon/ag (4).jpg" alt="laptop">
+                    </div>
+                </div>
+
+                <div class="gallery-item travel">
+                    <div class="gallery-item-inner">
+                        <img src="media/agnethon/ag (5).jpg " alt="travel">
+                    </div>
+                </div>
+
+                <div class="gallery-item photograph">
+                    <div class="gallery-item-inner">
+                        <img src="media/agnethon/ag (6).jpg" alt="photograph">
+                    </div>
+                </div>
+
+                <div class="gallery-item laptop">
+                    <div class="gallery-item-inner">
+                        <img src="media/agnethon/ag (7).jpg" alt="laptop">
+                    </div>
+                </div>
+
+                <div class="gallery-item watch">
+                    <div class="gallery-item-inner">
+                        <img src="media/agnethon/ag (8).jpg" alt="watch">
+                    </div>
+                </div>
+
+                <div class="gallery-item travel">
+                    <div class="gallery-item-inner">
+                        <img src="media/agnethon/ag (9).jpg" alt="travel">
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const filterContainer = document.querySelector(".gallery-filter"),
+            galleryItems = document.querySelectorAll(".gallery-item");
+
+        filterContainer.addEventListener("click", (event) => {
+            if (event.target.classList.contains("filter-item")) {
+                filterContainer.querySelector(".active").classList.remove("active");
+                event.target.classList.add("active");
+                const filterValue = event.target.getAttribute("data-filter");
+                galleryItems.forEach((item) => {
+                    if (item.classList.contains(filterValue) || filterValue === 'all') {
+                        item.classList.remove("hide");
+                        item.classList.add("show");
+                    }
+                    else {
+                        item.classList.remove("show");
+                        item.classList.add("hide");
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

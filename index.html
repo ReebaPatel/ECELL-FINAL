@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-CELL FCRIT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div class="hero-section">
+        <div class="mask">
+            <video class="clipped-video" muted loop autoplay>
+                <source src="media/bg-new.mp4">
+                </source>
+            </video>
+        </div>
+      
+
+        <script>
+            window.addEventListener('scroll', function () {
+                let scrollValue = window.scrollY;
+                let mask = document.querySelector('.mask');
+                console.log(scrollValue, "Hi");// change mask size based on scroll
+                let newSize = 98 + scrollValue; // adjust this calculation to suit your needs
+                mask.style.maskSize = newSize + '%'; // Applying the new size to the mask element
+
+            })
+        </script>
+    </div>
+    <!-- ********************************mask going up********************************** -->
+    <!-- <div class="video-wrapper">
+            <video autoplay muted loop>
+                <source src="media/bg-new.mp4" type="video/mp4">
+            </video>
+            <div class="mask-image"></div>
+        </div>
+        <script>
+            const maskImage = document.querySelector('.mask-image');
+
+            function updateImageTransform() {
+                const scrollY = window.scrollY;
+                const container = document.querySelector('.hero-section');
+                if (container) {
+                    const containerHeight = container.offsetHeight;
+                    const revealPercent = Math.min(scrollY / containerHeight, 1);
+                    maskImage.style.transform = `translateY(-${revealPercent * 4000}%)`;
+                }
+            }
+
+            window.addEventListener('scroll', updateImageTransform);
+            window.addEventListener('resize', updateImageTransform);
+
+            // Initial call to set the correct transform on page load
+            updateImageTransform();
+        </script> -->
+
+    <!-- ***********************Moving Bars************************************************************* -->
+    <!-- <div class="inverted-bar" data-content="IIC"> </div> -->
+    <!-- <div class="inverted-bar-2" data-content="E-CELL FCRIT "> </div> -->
+
+    </div>
+    <div id="aboutus"></div>
+    <div id="counter-section"></div>
+    <div id="initiatives"></div>
+    <div id="sponsors"></div>
+    <div id="testimonial"></div>
+    <div id="footer"></div>
+    <div class="cursor"></div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+    <script>
+        new kursor({
+            type: 1,
+            color: "#5ce399",
+            removeDefaultCursor: true
+
+        })
+    </script>
+</body>
+
+</html>

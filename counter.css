@@ -1,0 +1,92 @@
+#counter-section {
+    padding-top: 40px;
+        min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: CSSscrollReveal 20s cubic-bezier(0.25, 0.1, 0.25, 1) both; /* Custom smooth timing function */
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    animation-timing-function: ease; 
+}
+
+#counter-section .content_about {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+
+#counter-section .content_about .box {
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+#counter-section .content_about .box .icon{
+    height: auto;
+}
+#counter-section .content_about .box img {
+    height: 152px;
+    width: 165px;
+
+}
+
+#counter-section .content_about .box .count .counter {
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+.content_about .box .text {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+
+}
+
+.count .counter, span {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.count {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1036px) {
+    #counter-section {
+        padding: 50px 50px 0 50px;
+    }
+
+    #counter-section .content_about .box {
+        width: calc(50% - 30px);
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #counter-section .content_about .box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #counter-section {
+        padding: 30px 20px 0 20px;
+    }
+}

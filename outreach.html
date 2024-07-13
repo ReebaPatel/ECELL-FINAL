@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="gallery.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <section class="hero-container">
+        <h1><span style="color:#4cf0b1">OUTREACH</span></h1>
+        <p>The Outreach Program was a highly impactful event aimed at reaching out to students and imparting essential
+            knowledge on entrepreneurship. Through engaging sessions, students learned about the fundamental qualities
+            of successful entrepreneurs and explored various topics related to starting and sustaining a business. The
+            program provided a unique opportunity for students to gain valuable insights, develop entrepreneurial
+            skills, and connect with experienced mentors. The Outreach Program successfully inspired and empowered the
+            next generation of entrepreneurs, leaving a lasting legacy of knowledge and motivation.</p>
+
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="gallery-filter">
+                    <span class="filter-item active" data-filter="all">ALL</span>
+                    <span class="filter-item" data-filter="travel">2024</span>
+                    <span class="filter-item" data-filter="photograph">2023</span>
+                    <span class="filter-item" data-filter="watch">2022</span>
+                    <span class="filter-item" data-filter="laptop">2021</span>
+                </div> -->
+            </div>
+            <div class="row">
+
+                <!-- <div class="gallery-item travel">
+                    <div class="gallery-item-inner">
+                        <img src="media/outreach/op_(1).jpg" alt="op">
+                    </div>
+                </div> -->
+
+                <div class="gallery-item laptop">
+                    <div class="gallery-item-inner">
+                        <img src="media/outreach/op_(2).jpg" alt="op">
+                    </div>
+                </div>
+
+                <div class="gallery-item photograph">
+                    <div class="gallery-item-inner">
+                        <img src="media/outreach/op_(3).jpg" alt="op">
+                    </div>
+                </div>
+
+                <div class="gallery-item watch">
+                    <div class="gallery-item-inner">
+                        <img src="media/outreach/op_(4).jpg" alt="op">
+                    </div>
+                </div>
+
+                <div class="gallery-item laptop">
+                    <div class="gallery-item-inner">
+                        <img src="media/outreach/op5.jpeg" alt="op">
+                    </div>
+                </div>
+
+                <div class="gallery-item travel">
+                    <div class="gallery-item-inner">
+                        <img src="media/outreach/op6.jpeg " alt="op">
+                    </div>
+                </div>
+
+                <div class="gallery-item photograph">
+                    <div class="gallery-item-inner">
+                        <img src="media/outreach/op7.jpeg" alt="op">
+                    </div>
+                </div>
+
+                <div class="gallery-item laptop">
+                    <div class="gallery-item-inner">
+                        <img src="media/outreach/op8.jpeg" alt="op">
+                    </div>
+                </div>
+
+                <div class="gallery-item watch">
+                    <div class="gallery-item-inner">
+                        <video muted autoplay loop src="media/outreach/op (1).MOV" alt="op">
+                    </div>
+                </div>
+
+                <!-- <div class="gallery-item travel">
+                    <div class="gallery-item-inner">
+                        <img src="media/outreach/op.jpg" alt="travel">
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const filterContainer = document.querySelector(".gallery-filter"),
+            galleryItems = document.querySelectorAll(".gallery-item");
+
+        filterContainer.addEventListener("click", (event) => {
+            if (event.target.classList.contains("filter-item")) {
+                filterContainer.querySelector(".active").classList.remove("active");
+                event.target.classList.add("active");
+                const filterValue = event.target.getAttribute("data-filter");
+                galleryItems.forEach((item) => {
+                    if (item.classList.contains(filterValue) || filterValue === 'all') {
+                        item.classList.remove("hide");
+                        item.classList.add("show");
+                    }
+                    else {
+                        item.classList.remove("show");
+                        item.classList.add("hide");
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

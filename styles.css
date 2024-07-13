@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --font: "poppins";
+  --primary-color: #4cf0b1;
+  --primary-rgb: rgb(76, 240, 177);
+}
+
+body {
+  padding: 0;
+  margin: 1;
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  position: relative;
+  height: 3600px;
+  display: block;
+  
+  /* Use viewport height for responsiveness */
+}
+/* 
+.video-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+} */
+
+/* .video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* .mask-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("media/output-onlinepngtools\ \(2\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: transform 2s ease-in-out;
+  background-color: transparent;
+  color: transparent;
+} */
+
+.content {
+  padding: 20px;
+}
+
+.hero-section .mask {
+  top: 0;
+  position: sticky;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  mask-size: 60%; /* Initial mask size */
+  mask-image: url(media/ecell_logo3.png);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Ensure it's above other content */
+  overflow: hidden; /* Hide overflow content */
+  transition: mask-size 0.5s ease; /* Smooth transition for mask size */
+}
+
+
+.hero-section .mask video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; /
+}
+
+/* .hero-section .mask  .clipped-video {
+  -webkit-clip-path: url(#text-overlay);
+  clip-path: url(#text-overlay);
+} */
+
+@media screen and (max-width: 600px) {
+  .hero-section {
+    /* position: relative; */
+    height: 50vh;
+    /* Use viewport height for responsiveness */
+  }
+
+  .video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 84%;
+    object-fit: cover;
+  }
+  .video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .mask-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 84%;
+    background-image: url("ecell_logo3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: transform 2s ease-in-out;
+    background-color: black;
+    color: transparent;
+  }
+}
+
+@keyframes CSSscrollReveal {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.inverted-bar {
+  position: relative;
+  height: 50%;
+  font-size: 190px;
+  font-weight: bolder;
+  /* display: block; */
+  animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) backwards;
+  animation-direction: alternate-reverse;
+  animation-delay: 2s;
+}
+
+@keyframes reveal {
+  /* 0%,100% {
+    transform: translate(0%);
+  } */
+  50% {
+    transform: translate(-100%);
+  }
+}
+
+.inverted-bar:before,
+.inverted-bar:after {
+  padding: 10px 0;
+  text-indent: 10px;
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  content: attr(data-content);
+}
+
+.inverted-bar:before {
+  background-color: var(--primary-color);
+  color: black;
+  width: 100%;
+  height: -webkit-fill-available;
+}
+
+.inverted-bar:after {
+  background-color: black;
+  color: var(--primary-color);
+  width: 40%;
+  height: -webkit-fill-available;
+}
+
+.inverted-bar-2 {
+  position: relative;
+  height: 50%;
+  font-size: 100px;
+  font-weight: bolder;
+  /* display: block; */
+  /* animation: reveal  5.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s ; */
+  animation: secBlock 3s cubic-bezier(0.74, 0.06, 0.4, 0.92) backwards;
+  animation-direction: alternate;
+  animation-delay: 1s;
+}
+@keyframes secBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+  }
+}
+
+@keyframes reveal {
+  /* 0%,100% {
+    transform: translate(0%);
+  } */
+  50% {
+    transform: translate(-100%);
+  }
+}
+
+.inverted-bar-2:before,
+.inverted-bar-2:after {
+  padding: 10px 0;
+  text-indent: 10px;
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  content: attr(data-content);
+}
+
+.inverted-bar-2:before {
+  background-color: var(--primary-color);
+  color: black;
+  width: 100%;
+  height: -webkit-fill-available;
+}
+
+.inverted-bar-2:after {
+  background-color: black;
+  color: var(--primary-color);
+  width: 29%;
+  height: -webkit-fill-available;
+}

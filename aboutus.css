@@ -1,0 +1,191 @@
+#aboutus {
+    font-family: var(--font);
+    margin: 0;
+    padding: 0 20px;
+    background-color: black;
+    color: white;
+
+    min-height: 100vh;
+
+
+}
+
+.about-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    height: max-content;
+    animation: CSSscrollReveal 2s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+    /* Custom smooth timing function */
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    animation-timing-function: ease;
+}
+
+.about-container .rightdiv {
+    width: 50%;
+    height: 700px;
+    place-content: center;
+}
+
+.about-container .leftdiv {
+    width: 50%;
+
+}
+
+.about-container .rightdiv video {
+    width: 60%;
+    height: 80%;
+    border-radius: 120px;
+    margin-left: 140px;
+}
+
+.aboutus-content {
+    text-align: justify;
+    padding: 10px;
+}
+
+.aboutus-content h1 {
+    color: white;
+    text-align: center;
+    font-size: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.aboutus-content p {
+    margin: 60px 0;
+}
+
+.vision-mission {
+    display: flex;
+    gap: 20px;
+    animation: CSSscrollReveal 2s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+    /* Custom smooth timing function */
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    animation-timing-function: ease;
+}
+
+.about-card {
+    background-color: black;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--primary-color);
+    padding: 20px;
+    color: white;
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    max-width: calc(50% - 20px);
+    cursor: pointer;
+    transition: .5s all;
+
+}
+
+.about-card h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.about-card p {
+    margin: 10px 0 0;
+    line-height: 1.6;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.about-card:hover {
+    transform: scale(1.020);
+
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        display: flex;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .about-container .leftdiv {
+        width: 100%;
+    }
+    .about-container .rightdiv video {
+        width: 100%;
+        height: 80%;
+        border-radius: 120px;
+margin: 0;    }
+    .about-container .rightdiv {
+        width: 100%;
+        height: 550px;
+    }
+    .about-card h2 {
+        margin: 0;
+        color: var(--primary-color);
+        font-size: 24px;
+    }
+
+    .vision-mission {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .about-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .about-container .aboutus-content H1 {
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-container {
+        padding: 0;
+    }
+
+    .about-container .aboutus-content {
+        padding: 0
+    }
+
+    .about-container .aboutus-content p {
+        margin: 30px 0;
+        text-align: justify;
+    }
+
+    .about-card p {
+        margin: 10px 0 0;
+        line-height: 1.6;
+        color: white;
+        font-size: 12px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-container .aboutus-content p {
+        margin: 30px 0;
+        text-align: justify;
+        padding: 0;
+    }
+
+    .about-container .aboutus-content .about-card p {
+        margin: 10px 0 0;
+        line-height: 1.6;
+        color: white;
+        font-size: 15px;
+        text-align: justify;
+
+    }
+}

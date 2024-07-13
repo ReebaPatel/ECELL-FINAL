@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+.body-container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  position: relative;
+}
+.body-container::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: black;
+  clip-path: polygon(86% 0, 100% 0, 100% 100%, 60% 100%);
+}
+.fa-close{
+/* cursor: pointer; */
+  margin-top:0 auto;
+  /*margin-left: 0 auto;
+  padding: 12px 16px;
+  transform: translate(0%, -50%); */
+  color: aliceblue;
+  /* font-size: 50px; */
+}
+.contain{
+  z-index: 12;
+  max-width: 1050px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  margin: 0 20px;
+  box-shadow: 0 0 10px 0 #4cf0b1, 0 0 20px 0 #4cf0b1, 0 0 30px 0 #4cf0b1;
+}
+.contain .content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+.content .image-box{
+  max-width: 55%;
+}
+.content .image-box img{
+  width: 100%;
+}
+.content .topic{
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+}
+.content form{
+  width: 40%;
+  margin-right: 30px;
+}
+.content .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 16px 0;
+  position: relative;
+}
+.content .input-box input{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.content .input-box input:focus,
+.content .input-box input:valid{
+  border-color:#4cf0b1;
+  background-color: black;
+  color: white;
+}
+.content .input-box label{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: white;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: white;
+  background: black;
+}
+.content .message-box input:focus ~ label,
+.content .message-box input:valid ~ label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: white;
+  background-color: black;
+}
+.content .message-box{
+  min-height: 100px;
+  position: relative;
+}
+.content .message-box textarea:focus {
+  border-color: black;
+  background-color: black; /* Change to desired background color */
+}
+.content .message-box textarea{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  background-color: black;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  transition :all 0.3s ease;
+}
+.content .message-box textarea:focus{
+  border-color:#4cf0b1;
+  background-color: black;
+  color: white;
+}
+.content .message-box label{
+  position: absolute;
+  font-size: 16px;
+  color: white;
+  left: 18px;
+  top: 6px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.content .message-box textarea:focus ~ label{
+  left: 12px;
+  top: -10px;
+  font-size: 14px;
+  background: black;
+}
+
+
+.content .input-box input[type="submit"]{
+  color:black;
+  background:#4cf0b1;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.content .input-box input[type="submit"]:hover{
+  background-color: #4cf0b1;
+}
+@media (max-width:1000px) {
+  .content .image-box{
+    max-width: 70%;
+  }
+  .content{
+    padding: 10px 0;
+  }
+}
+@media (max-width:900px) {
+  .content .image-box{
+    display: none;
+  }
+  .content form{
+    width: 100%;
+    margin-left: 30px;
+  }
+}
+/* styles.css */
+
+
+button {
+  margin: 20px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  color: black;
+}
+.message-box{
+  display: inline-flex;
+  padding: 5px;
+  gap: 10px;
+
+}
+.closeBtn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.input-box{
+  padding: 5px;
+  gap: 10px;
+}
+.input-box label{
+  padding: 5px;
+}
+
+
+@media screen and (max-width:500px) {
+  .input-box, .message-box{
+    font-size: 12px;
+    padding: 5px;
+    gap: 10px;
+  }
+  .input-box label{
+    padding: 5px;
+  }
+  .message-box{
+    display: inline-flex;
+    padding: 5px;
+    gap: 10px;
+  
+  }
+  .popup-content{
+    padding: 10px;
+  }
+  
+}
+

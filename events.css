@@ -1,0 +1,381 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0c0c0c;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header img {
+    width: 100px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.main-content-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hero1 {
+    flex: 1;
+    padding: 50px 20px;
+    float: left;
+}
+
+.hero2 {
+    flex: 1;
+    padding: 50px 20px;
+    float: right;
+    text-align: right;
+}
+
+.hero1 h1 {
+    font-size: 48px;
+    color: #4cf0b1;
+}
+
+.hero1 p {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.hero1 button {
+    background-color: #4cf0b1;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    margin: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.hero1 button:hover {
+    background-color: #4cf0b1;
+}
+
+.hero2 h1 {
+    font-size: 48px;
+    color: #4cf0b1;
+    float: right;
+}
+
+.hero2 p {
+    font-size: 15px;
+    color: #ccc;
+    float: right;
+}
+
+.hero2 button {
+    background-color: #4cf0b1;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    margin: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    float: right;
+}
+
+.hero2 button:hover {
+    background-color: #4cf0b1;
+}
+
+
+.gallery {
+    --s: 130px;
+    /* control the size of the images*/
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+    position: relative;
+}
+
+.galleryL {
+    --s: 130px;
+    /* control the size of the images*/
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+    position: relative;
+
+}
+
+.gallery input {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    inset: calc(50% - var(--s)/3);
+    cursor: pointer;
+    --g: linear-gradient(#4cf0b1 0 0) no-repeat;
+    background: var(--g) 50%/60% 3px, var(--g) 50%/3px 60%, #222;
+    transition: 1.5s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.galleryL input {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    inset: calc(50% - var(--s)/3);
+    cursor: pointer;
+    --g: linear-gradient(#4cf0b1 0 0) no-repeat;
+    background: var(--g) 50%/60% 3px, var(--g) 50%/3px 60%, #222;
+    transition: 1.5s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.gallery>img {
+    width: var(--s);
+    aspect-ratio: 1;
+    object-fit: cover;
+    transform: scale(.1);
+    filter: brightness(0);
+    pointer-events: none;
+    transform-origin: var(--x) var(--y);
+    transition: 1s calc((var(--i) - 1)*.1s);
+}
+
+.galleryL>img {
+    width: var(--s);
+    aspect-ratio: 1;
+    object-fit: cover;
+    transform: scale(.1);
+    filter: brightness(0);
+    pointer-events: none;
+    transform-origin: var(--x) var(--y);
+    transition: 1s calc((var(--i) - 1)*.1s);
+}
+
+.gallery>img:nth-of-type(1) {
+    --i: 1;
+    --x: 150%;
+    --y: 150%;
+}
+
+.gallery>img:nth-of-type(2) {
+    --i: 2;
+    --x: 50%;
+    --y: 150%;
+}
+
+.gallery>img:nth-of-type(3) {
+    --i: 3;
+    --x: -50%;
+    --y: 150%;
+}
+
+.gallery>img:nth-of-type(4) {
+    --i: 4;
+    --x: 150%;
+    --y: 50%;
+}
+
+.gallery>img:nth-of-type(5) {
+    --i: 5
+}
+
+.gallery>img:nth-of-type(6) {
+    --i: 6;
+    --x: -50%;
+    --y: 50%;
+}
+
+.gallery>img:nth-of-type(7) {
+    --i: 7;
+    --x: 150%;
+    --y: -50%;
+}
+
+.gallery>img:nth-of-type(8) {
+    --i: 8;
+    --x: 50%;
+    --y: -50%;
+}
+
+.gallery>img:nth-of-type(9) {
+    --i: 9;
+    --x: -50%;
+    --y: -50%;
+}
+
+.galleryL>img:nth-of-type(1) {
+    --i: 1;
+    --x: 150%;
+    --y: 150%;
+}
+
+.galleryL>img:nth-of-type(2) {
+    --i: 2;
+    --x: 50%;
+    --y: 150%;
+}
+
+.galleryL>img:nth-of-type(3) {
+    --i: 3;
+    --x: -50%;
+    --y: 150%;
+}
+
+.galleryL>img:nth-of-type(4) {
+    --i: 4;
+    --x: 150%;
+    --y: 50%;
+}
+
+.galleryL>img:nth-of-type(5) {
+    --i: 5
+}
+
+.galleryL>img:nth-of-type(6) {
+    --i: 6;
+    --x: -50%;
+    --y: 50%;
+}
+
+.galleryL>img:nth-of-type(7) {
+    --i: 7;
+    --x: 150%;
+    --y: -50%;
+}
+
+.galleryL>img:nth-of-type(8) {
+    --i: 8;
+    --x: 50%;
+    --y: -50%;
+}
+
+.galleryL>img:nth-of-type(9) {
+    --i: 9;
+    --x: -50%;
+    --y: -50%;
+}
+
+.gallery>input:checked~img {
+    transform: scale(1);
+    filter: brightness(1);
+    pointer-events: initial;
+}
+
+.gallery>input:checked {
+    transform: translateY(calc(1.75*var(--s))) scale(.5) rotate(45deg);
+    --b: 70%;
+}
+
+.galleryL>input:checked~img {
+    transform: scale(1);
+    filter: brightness(1);
+    pointer-events: initial;
+}
+
+.galleryL>input:checked {
+    transform: translateY(calc(1.75*var(--s))) scale(.5) rotate(45deg);
+    --b: 70%;
+}
+
+h2 {
+    display: block;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background: #000000;
+}
+
+@media (max-width: 768px) {
+    .main-content-right{
+        flex-direction: column-reverse;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero1 h1,
+    .hero2 h1 {
+        font-size: 40px;
+        float: left;
+    }
+
+    .hero1 p,
+    .hero2 p {
+        font-size: 20px;
+        float: left;
+    }
+
+    .hero1 button,
+    .hero2 button {
+        font-size: 18px;
+        padding: 10px 20px;
+        float: left;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .gallery input {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 80px;
+    }
+
+    .hero1 h1,
+    .hero2 h1 {
+        font-size: 28px;
+        float: left;
+    }
+
+    .hero1 p,
+    .hero2 p {
+        font-size: 16px;
+        float: left;
+    }
+
+    .hero1 button,
+    .hero2 button {
+        font-size: 14px;
+        padding: 8px 16px;
+        float: left;
+    }
+
+    .gallery input {
+        font-size: 10px;
+    }
+
+}

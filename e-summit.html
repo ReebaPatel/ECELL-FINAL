@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="gallery.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+    <section class="hero-container">
+        <h1><span style="color:#4cf0b1">E-</span>SUMMIT</h1>
+        <p>The FCRIT Ecell E-Summit was a remarkable event where innovation met opportunity! Visionary entrepreneurs,
+            industry experts, and inspiring thought leaders came together for a day filled with insightful talks,
+            engaging workshops, and valuable networking. Attendees discovered the latest trends, gained actionable
+            insights, and connected with like-minded individuals who share a passion for entrepreneurship. The E-Summit
+            ignited many entrepreneurial journeys and made a lasting impact on all who participated.</p>
+
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="gallery-filter">
+                    <span class="filter-item active" data-filter="all">ALL</span>
+                    <span class="filter-item" data-filter="travel">2024</span>
+                    <span class="filter-item" data-filter="photograph">2023</span>
+                    <span class="filter-item" data-filter="watch">2022</span>
+                    <span class="filter-item" data-filter="laptop">2021</span>
+                </div> -->
+            </div>
+            <div class="row">
+
+                <div class="gallery-item travel">
+                    <div class="gallery-item-inner">
+                        <img src="media/esummit/esummit1.jpeg" alt="travel">
+                    </div>
+                </div>
+
+                <div class="gallery-item laptop">
+                    <div class="gallery-item-inner">
+                        <img src="media/esummit/esummit2.jpeg" alt="laptop">
+                    </div>
+                </div>
+
+                <div class="gallery-item photograph">
+                    <div class="gallery-item-inner">
+                        <img src="media/esummit/esummit3.jpeg" alt="photograph">
+                    </div>
+                </div>
+
+                <div class="gallery-item watch">
+                    <div class="gallery-item-inner">
+                        <img src="media/esummit/esummit4.jpeg" alt="watch">
+                    </div>
+                </div>
+
+                <div class="gallery-item laptop">
+                    <div class="gallery-item-inner">
+                        <img src="media/esummit/esummit5.jpeg" alt="laptop">
+                    </div>
+                </div>
+
+                <div class="gallery-item travel">
+                    <div class="gallery-item-inner">
+                        <img src="media/esummit/esummit6.jpeg " alt="travel">
+                    </div>
+                </div>
+
+                <div class="gallery-item photograph">
+                    <div class="gallery-item-inner">
+                        <img src="media/esummit/esummit7.jpg" alt="photograph">
+                    </div>
+                </div>
+
+                <div class="gallery-item laptop">
+                    <div class="gallery-item-inner">
+                        <img src="media/esummit/esummit10.JPG" alt="laptop">
+                    </div>
+                </div>
+
+                <div class="gallery-item watch">
+                    <div class="gallery-item-inner">
+                        <img src="media/esummit/esummit9.JPG" alt="watch">
+                    </div>
+                </div>
+
+                <div class="gallery-item travel">
+                    <div class="gallery-item-inner">
+                        <img src="media/esummit/esummit10.JPG" alt="travel">
+                    </div>
+                </div>
+
+        
+                <div class="gallery-item travel">
+                    <div class="gallery-item-inner">
+                        <img src="media/esummit/esummit12.JPG" alt="travel">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const filterContainer = document.querySelector(".gallery-filter"),
+            galleryItems = document.querySelectorAll(".gallery-item");
+
+        filterContainer.addEventListener("click", (event) => {
+            if (event.target.classList.contains("filter-item")) {
+                filterContainer.querySelector(".active").classList.remove("active");
+                event.target.classList.add("active");
+                const filterValue = event.target.getAttribute("data-filter");
+                galleryItems.forEach((item) => {
+                    if (item.classList.contains(filterValue) || filterValue === 'all') {
+                        item.classList.remove("hide");
+                        item.classList.add("show");
+                    }
+                    else {
+                        item.classList.remove("show");
+                        item.classList.add("hide");
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

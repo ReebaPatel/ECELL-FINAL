@@ -1,0 +1,216 @@
+{
+    "doctype": "html",
+    "language": "en",
+    "head": {
+      "meta": [
+        {
+          "charset": "UTF-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        }
+      ],
+      "title": "Blog 1",
+      "link": [
+        {
+          "rel": "stylesheet",
+          "href": "blogs.css"
+        }
+      ]
+    },
+    "body": {
+      "header": {
+        "nav": {
+          "ul": {
+            "class": "nav-bar",
+            "li": [
+              {
+                "class": "logo",
+                "a": {
+                  "href": "#",
+                  "img": {
+                    "src": "logo.png"
+                  }
+                }
+              },
+              {
+                "input": {
+                  "type": "checkbox",
+                  "id": "check"
+                }
+              },
+              {
+                "span": {
+                  "class": "menu",
+                  "li": [
+                    {
+                      "a": {
+                        "href": "",
+                        "text": "Home"
+                      }
+                    },
+                    {
+                      "a": {
+                        "href": "",
+                        "text": "SIP"
+                      }
+                    },
+                    {
+                      "a": {
+                        "href": "",
+                        "text": "About us"
+                      }
+                    },
+                    {
+                      "a": {
+                        "href": "",
+                        "text": "Blog & E-Education"
+                      }
+                    },
+                    {
+                      "a": {
+                        "href": "",
+                        "text": "Register"
+                      }
+                    }
+                  ],
+                  "label": {
+                    "for": "check",
+                    "class": "close-menu",
+                    "i": {
+                      "class": "fas fa-times"
+                    }
+                  }
+                }
+              },
+              {
+                "label": {
+                  "for": "check",
+                  "class": "open-menu",
+                  "i": {
+                    "class": "fas fa-bars"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "div": [
+        {
+          "class": "container",
+          "div": {
+            "class": "featured-story",
+            "img": {
+              "src": "media/blogs/Screenshot 2024-07-01 014149.png",
+              "alt": "Featured Story"
+            },
+            "div": {
+              "h1": "Lorem, ipsum.",
+              "p": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quis a ipsam corrupti ipsum quaerat sequi optio, tempore suscipit beatae! Nemo facilis ipsa voluptatibus itaque illum et ullam at repudiandae laudantium earum dolorum corporis repellat, non, cumque a ducimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur harum atque commodi et temporibus repellendus unde sed adipisci modi animi error, excepturi quos ratione iste? Saepe ipsum atque dignissimos, aliquid ullam neque, nam est quae modi voluptates laudantium, qui odio?",
+              "a": {
+                "href": "blogs-knowmore.html",
+                "style": "background-color: #4cf0b1; color: white; padding: 0.5em 1em; text-decoration: none;",
+                "text": "Read more"
+              }
+            }
+          }
+        },
+        {
+          "h1": {
+            "id": "title",
+            "text": "Blogs"
+          }
+        },
+        {
+          "main": {
+            "div": [
+              {
+                "class": "container1",
+                "div": [
+                  {
+                    "class": "placards",
+                    "img": {
+                      "src": "media/blogs/Screenshot 2024-07-01 014240.png",
+                      "alt": "img not available"
+                    },
+                    "div": {
+                      "class": "details",
+                      "h3": "Lorem ipsum dolor",
+                      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolore fuga omnis placeat minus voluptatem non temporibus, aperiam doloremque officiis rerum illum! Minima ab dicta beatae veritatis aliquam, molestias impedit."
+                    }
+                  },
+                  {
+                    "class": "placards",
+                    "img": {
+                      "src": "media/blogs/Screenshot 2024-07-01 014225.png",
+                      "alt": "img not available"
+                    },
+                    "div": {
+                      "class": "details",
+                      "h3": "Lorem ipsum dolor",
+                      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolore fuga omnis placeat minus voluptatem non temporibus, aperiam doloremque officiis rerum illum! Minima ab dicta beatae veritatis aliquam, molestias impedit."
+                    }
+                  },
+                  {
+                    "class": "placards",
+                    "img": {
+                      "src": "media/blogs/Screenshot 2024-06-30 172632.png",
+                      "alt": "img not available"
+                    },
+                    "div": {
+                      "class": "details",
+                      "h3": "Lorem ipsum dolor",
+                      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolore fuga omnis placeat minus voluptatem non temporibus, aperiam doloremque officiis rerum illum! Minima ab dicta beatae veritatis aliquam, molestias impedit."
+                    }
+                  }
+                ]
+              },
+              {
+                "class": "container2",
+                "div": [
+                  {
+                    "class": "placards",
+                    "img": {
+                      "src": "media/blogs/Screenshot 2024-06-30 172600.png",
+                      "alt": "img not available"
+                    },
+                    "div": {
+                      "class": "details",
+                      "h3": "Lorem ipsum dolor",
+                      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolore fuga omnis placeat minus voluptatem non temporibus, aperiam doloremque officiis rerum illum! Minima ab dicta beatae veritatis aliquam, molestias impedit."
+                    }
+                  },
+                  {
+                    "class": "placards",
+                    "img": {
+                      "src": "media/blogs/Screenshot 2024-07-01 014240.png",
+                      "alt": "img not available"
+                    },
+                    "div": {
+                      "class": "details",
+                      "h3": "Lorem ipsum dolor",
+                      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolore fuga omnis placeat minus voluptatem non temporibus, aperiam doloremque officiis rerum illum! Minima ab dicta beatae veritatis aliquam, molestias impedit."
+                    }
+                  },
+                  {
+                    "class": "placards",
+                    "img": {
+                      "src": "media/blogs/Screenshot 2024-07-01 014212.png",
+                      "alt": "img not available"
+                    },
+                    "div": {
+                      "class": "details",
+                      "h3": "Lorem ipsum dolor",
+                      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolore fuga omnis placeat minus voluptatem non temporibus, aperiam doloremque officiis rerum illum! Minima ab dicta beatae veritatis aliquam, molestias impedit."
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
