@@ -73,7 +73,7 @@ body {
     /* height: 330px; */
     flex: 1 1 calc(25% - 40px);
     transition: all .3s ease;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .team-member:hover {
     transform: scale(1.1);

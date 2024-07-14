@@ -215,7 +215,7 @@ button {
   color: black;
 }
 .message-box{
-  display: inline-flex;
+  display: flex;
   padding: 5px;
   gap: 10px;
 
@@ -231,7 +231,7 @@ button {
 .closeBtn:focus {
   color: black;
   text-decoration: none;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .input-box{

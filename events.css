@@ -62,7 +62,7 @@ header img {
     border: none;
     padding: 15px 30px;
     font-size: 18px;
-    cursor: pointer;
+    /* cursor: pointer; */
     color: #fff;
     margin: 10px;
     border-radius: 8px;
@@ -90,7 +90,7 @@ header img {
     border: none;
     padding: 15px 30px;
     font-size: 18px;
-    cursor: pointer;
+    /* cursor: pointer; */
     color: #fff;
     margin: 10px;
     border-radius: 8px;
@@ -102,6 +102,11 @@ header img {
     background-color: #4cf0b1;
 }
 
+
+.hidden{
+opacity:0;
+transition: all 1s;
+}
 
 .gallery {
     --s: 130px;
@@ -127,7 +132,7 @@ header img {
     z-index: 1;
     border-radius: 50%;
     inset: calc(50% - var(--s)/3);
-    cursor: pointer;
+    /* cursor: pointer; */
     --g: linear-gradient(#4cf0b1 0 0) no-repeat;
     background: var(--g) 50%/60% 3px, var(--g) 50%/3px 60%, #222;
     transition: 1.5s;
@@ -141,7 +146,7 @@ header img {
     z-index: 1;
     border-radius: 50%;
     inset: calc(50% - var(--s)/3);
-    cursor: pointer;
+    /* cursor: pointer; */
     --g: linear-gradient(#4cf0b1 0 0) no-repeat;
     background: var(--g) 50%/60% 3px, var(--g) 50%/3px 60%, #222;
     transition: 1.5s;

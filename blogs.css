@@ -78,7 +78,7 @@ body {
     /* border-radius: 13px; */
     /* border: 1px solid var(--primary-color); */
     transition: .7s all;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .placards:hover {
