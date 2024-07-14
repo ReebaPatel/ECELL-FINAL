@@ -18,12 +18,12 @@
     font-family: "Poppins", sans-serif;
 }
 h1{
-    font-size: 40px;
+    font-size: 5rem;
     color: white;
     color: white;
     text-align: center;
     padding-top: 25px;
-    text-shadow: 5px 5px 10px var(--mint-green);
+  
 
 }
 body {
