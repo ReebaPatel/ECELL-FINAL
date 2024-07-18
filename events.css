@@ -108,6 +108,10 @@ opacity:0;
 transition: all 1s;
 }
 
+.show{
+    opacity: 1;
+}
+
 .gallery {
     --s: 130px;
     /* control the size of the images*/
@@ -331,12 +335,14 @@ body {
     .hero2 h1 {
         font-size: 40px;
         float: left;
+        text-align: left;
     }
 
     .hero1 p,
     .hero2 p {
         font-size: 20px;
         float: left;
+        text-align: left;
     }
 
     .hero1 button,

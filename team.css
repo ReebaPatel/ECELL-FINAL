@@ -49,7 +49,7 @@ body {
     border-color: var(--mint-green);
     border-color: var(--mint-green);
     padding: 20px;
-    margin: 1rem 6rem;
+    margin: 1rem 6rem ;
     box-shadow: -10px 10px 15px var(--mint-green);
     
     display: flex;
@@ -96,8 +96,20 @@ body {
     font-size: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .team-member {
         max-width: 100%;
+    }
+    .container {
+
+        background-color: var(--black);
+        border-radius: 15px;
+        border: 1px solid;
+        border-color: var(--mint-green);
+        border-color: var(--mint-green);
+        padding: 20px;
+        margin: 3rem ;
+      
+    
     }
 }
