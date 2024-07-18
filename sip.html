@@ -41,12 +41,12 @@
               the powerhouses of NexGen India.
             </p>
             <button id="openFormBtn1" class="btn btn-primary px-4 py-2 fs-5 mt-5"
-              style="background-color:#4cf0b1;color:black; font-weight: 600;">Register</button>
+              style="background-color: var(--primary-color);color:black; font-weight: 600;">Register</button>
             <div id="popupForm1" class="popup">
               <div class="popup-content">
                 <span class="closeBtn">&times;</span>
                 <form id="contactForm1" action="process-form.php" method="POST"
-                  style="background-color: black;color: #4cf0b1;text-align: left;">
+                  style="background-color: black;color: var(--primary-color);text-align: left;">
                   <div class="input-box">
                     <label>Enter your name</label><input type="text" name="name" required>
                   </div>
@@ -79,12 +79,12 @@
               students.
             </p>
             <button id="openFormBtn2" class="btn btn-primary px-4 py-2 fs-5 mt-5"
-              style="background-color:#4cf0b1;color:black; font-weight: 600;">Register</button>
+              style="background-color: var(--primary-color);color:black; font-weight: 600;">Register</button>
             <div id="popupForm2" class="popup">
               <div class="popup-content">
                 <span class="closeBtn">&times;</span>
                 <form id="contactForm2" action="process-form.php" method="POST"
-                  style="background-color: black;color: #4cf0b1;text-align: left;">
+                  style="background-color: black;color:var(--primary-color);text-align: left;">
                   <div class="input-box">
                     <label>Enter your name</label><input type="text" name="name" required>
                   </div>
@@ -117,12 +117,12 @@
               enhance your professional skills.
             </p>
             <button id="openFormBtn3" class="btn btn-primary px-4 py-2 fs-5 mt-5"
-              style="background-color:#4cf0b1;color:black; font-weight: 600;">Register</button>
+              style="background-color: var(--primary-color);color:black; font-weight: 600;">Register</button>
             <div id="popupForm3" class="popup">
               <div class="popup-content">
                 <span class="closeBtn">&times;</span>
                 <form id="contactForm3" action="process-form.php" method="POST"
-                  style="background-color: black;color: #4cf0b1;text-align: left;">
+                  style="background-color: black;color: var(--primary-color);text-align: left;">
                   <div class="input-box">
                     <label>Enter your name</label><input type="text" name="name" required>
                   </div>
@@ -158,7 +158,7 @@
 
     <div class="sec-cont">
       <div class="about-us">
-        <h1 style="color:#4cf0b1;margin-top: 105px;">About Us</h1>
+        <h1 style="color: var(--primary-color);margin-top: 105px;">About Us</h1>
         <p style="color: white;text-align: justify;">Startup Internship program is a part of Entrepreneurship Cell
           FCRIT. Through SIP, we aim
           to collaborate with the start-ups
@@ -269,13 +269,14 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
     <script>
-      new kursor({
-        type: 1,
-        color: "#5ce399",
-        removeDefaultCursor: true
+        new kursor({
+            type: 1,
+            color: "rgba(128,0,128,0.45)",
+            removeDefaultCursor: true
 
-      })
+        })
     </script>
+    <script src="script.js"></script>
     <script>
       // JavaScript to handle popup form
       document.getElementById('openFormBtn1').addEventListener('click', function () {

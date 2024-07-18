@@ -3,279 +3,142 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
+  <title>R&D Department</title>
+  <link rel="stylesheet" href="r&d.css">
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
-  <link rel="stylesheet" href="contactus.css">
-  <link rel="stylesheet" href="r&d.css">
-  <title>SIP</title>
+
+  <!-- Link to your CSS file for styling -->
 </head>
 
 <body>
-  <div id="navbar"></div>
-  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
-        aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-
-
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-          <div class="carousel-item active c-item">
-              <img src="media/sip/green8.jpg" class="d-block w-100 c-img" alt="Slide 1">
-              <div class="carousel-caption top-0 mt-4">
-                  <h1 class="display-1 fw-bolder text-capitalize">REASEARCH AND DEVELOPMENT</h1>
-                  <p class="mt-5">
-                    Conducting pioneering research to uncover new insights and develop innovative technologies.
-                  </p>
-                  <button id="openFormBtn1" class="btn btn-primary px-4 py-2 fs-5 mt-5"
-                      style="background-color:#4cf0b1;color:black; font-weight: 600;">Register</button>
-                  <div id="popupForm1" class="popup">
-                      <div class="popup-content">
-                          <span class="closeBtn">&times;</span>
-                          <form id="contactForm1" action="process-form.php" method="POST" style="background-color: black;color: #4cf0b1;text-align: left;">
-                              <div class="input-box">
-                                  <label>Enter your name</label><input type="text" name="name" required>
-                              </div>
-                              <div class="input-box">
-                                  <label>Enter your email</label><input type="email" name="email" required>
-                              </div>
-                              <div class="input-box">
-                                  <label>Subject</label><input type="text" name="subject" required>
-                              </div>
-                              <div class="message-box">
-                                  <label class="label1">Enter your message</label>
-                                  <textarea name="message"></textarea>
-                              </div>
-                              <div class="input-box">
-                                  <input type="submit" value="Register">
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="carousel-item c-item">
-              <img src="media/sip/green1.webp" class="d-block w-100 c-img" alt="Slide 2">
-              <div class="carousel-caption top-0 mt-4">
-                  <h1 class="display-1 fw-bolder text-capitalize">Advanced Research</h1>
-                  <p class="mt-5">
-                    Designing and prototyping new products that address current and future market needs.
-                  </p>
-                  <button id="openFormBtn2" class="btn btn-primary px-4 py-2 fs-5 mt-5"
-                      style="background-color:#4cf0b1;color:black; font-weight: 600;">Register</button>
-                  <div id="popupForm2" class="popup">
-                      <div class="popup-content">
-                          <span class="closeBtn">&times;</span>
-                          <form id="contactForm2" action="process-form.php" method="POST" style="background-color: black;color: #4cf0b1;text-align: left;">
-                              <div class="input-box">
-                                  <label>Enter your name</label><input type="text" name="name" required>
-                              </div>
-                              <div class="input-box">
-                                  <label>Enter your email</label><input type="email" name="email" required>
-                              </div>
-                              <div class="input-box">
-                                  <label>Subject</label><input type="text" name="subject" required>
-                              </div>
-                              <div class="message-box">
-                                  <label class="label1">Enter your message</label>
-                                  <textarea name="message"></textarea>
-                              </div>
-                              <div class="input-box">
-                                  <input type="submit" value="Register">
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="carousel-item c-item">
-              <img src="media/sip/green4.jpeg" class="d-block w-100 c-img" alt="Slide 3">
-              <div class="carousel-caption top-0 mt-4">
-                  <h1 class="display-1 fw-bolder text-capitalize">Product Development</h1>
-                  <p class="mt-5">
-                    Partnering with leading academic institutions, industry experts, and other organizations to leverage collective expertise and drive forward-thinking initiatives.
-                  </p>
-                  <button id="openFormBtn3" class="btn btn-primary px-4 py-2 fs-5 mt-5"
-                      style="background-color:#4cf0b1;color:black; font-weight: 600;">Register</button>
-                  <div id="popupForm3" class="popup">
-                      <div class="popup-content">
-                          <span class="closeBtn">&times;</span>
-                          <form id="contactForm3" action="process-form.php" method="POST" style="background-color: black;color: #4cf0b1;text-align: left;">
-                              <div class="input-box">
-                                  <label>Enter your name</label><input type="text" name="name" required>
-                              </div>
-                              <div class="input-box">
-                                  <label>Enter your email</label><input type="email" name="email" required>
-                              </div>
-                              <div class="input-box">
-                                  <label>Subject</label><input type="text" name="subject" required>
-                              </div>
-                              <div class="message-box">
-                                  <label class="label1">Enter your message</label>
-                                  <textarea name="message"></textarea>
-                              </div>
-                              <div class="input-box">
-                                  <input type="submit" value="Register">
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  
-      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-      </button>
-  </div>
-  
-  <div class="sec-cont">
-    <div class="about-us">
-      <h1 style="color:#4cf0b1;margin-top: 105px;">About Us</h1>
-      <p style="color: white;text-align: justify;">Welcome to the Research & Development (R&D) Department at E-Cell FCRIT , where innovation meets expertise. 
-        Our team is dedicated to pioneering advancements and driving the technological evolution that shapes the future.Our mission is to foster a culture of innovation and excellence, pushing the boundaries of what's possible to deliver groundbreaking solutions. We strive to anticipate the needs of tomorrow, 
-        transforming visionary ideas into tangible realities that empower industries and improve lives.</p>
-    </div>
-  </div>
-
-
-
-  <div class="thir-cont" style="margin-top:200px ;">
-    <div class="container">
-      <h1 style="margin-bottom:40px ;">Why Intern at a Startup ?</h1>
-      <div class="grid-container">
-        <div class="card">
-          <div class="container-card">
-            <p class="card-title">Innovation at the Core</p>
-            <p class="card-description">You’ll have the opportunity to work on cutting-edge projects that push the boundaries of science and technology
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="container-card">
-            <p class="card-title">Collaborative Environment</p>
-            <p class="card-description">We believe that the best ideas emerge from diverse perspectives and teamwork</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="container-card">
-            <p class="card-title">Career Growth and Development</p>
-            <p class="card-description">Through continuous learning opportunities, training programs, and access to the latest tools and technologies,</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="container-card">
-            <p class="card-title">Network better</p>
-            <p class="card-description">Develope a strong network with passionate minds while working at R&D.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="container-card">
-            <p class="card-title">Hands-On Experience</p>
-            <p class="card-description"> Gain real-world experience working on cutting-edge projects that impact the
-               growth.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="container-card">
-            <p class="card-title">Entrepreneurial Insight</p>
-            <p class="card-description">Gain unique insights into the workings of a startup, preparing you for future
-              entrepreneurial endeavors.</p>
-          </div>
-        </div>
+  <!-- Header Section -->
+  <div id="navbar"> </div>
+  <header>
+    <div class="header-content">
+      <img src="https://i.pinimg.com/564x/b0/10/16/b010163b6cb2a21a0b3d8c9400d26c52.jpg" alt="R&D Department Photo">
+      <div>
+        <h1>R&D Department</h1>
+        <p>Driving Innovation and Excellence</p>
+        <p>Welcome to the Research & Development (R&D) Department at E-Cell FCRIT , where innovation meets expertise.
+          Our team is dedicated to pioneering advancements and driving the technological evolution that shapes the
+          future.Our mission is to foster a culture of innovation and excellence, pushing the boundaries of what's
+          possible to deliver groundbreaking solutions. We strive to anticipate the needs of tomorrow,
+          transforming visionary ideas into tangible realities that empower industries and improve lives.</p>
       </div>
     </div>
-  </div>
+  </header>
 
+  <!-- Main Content Section -->
+  <main>
+    <section id="categories">
+      <h1>Research Categories</h1>
+      <div class="container">
+        <!-- Card for Biomedical Sciences -->
+        <div class="card">
+          <h2>Biomedical Sciences</h2>
+          <p>Research in medicine, genetics, pharmaceuticals, and biotechnology.</p>
+          <a href="#">Explore Biomedical Sciences</a>
+        </div>
 
+        <!-- Card for Information Technology (IT) -->
+        <div class="card">
+          <h2>Information Technology (IT)</h2>
+          <p>Includes software development, cybersecurity, AI, ML, and data science.</p>
+          <a href="#">Explore IT</a>
+        </div>
 
-  <div class="fourth-cont">
-    <div class="containersip" style="margin-top: 200px;">
-      <h1>RESEARCH AND DEVELOPMENTS </h1>
-      <div class="cardsip">
-        <img src="media/sip/green3.webp" alt="Sample Image">
-        <div class="card-text1">
-          <div class="card-title1">Lorem ipsum dolor sit amet,</div>
-          <div class="card-subtitle1">Lorem ipsum dolor sit amet,</div>
-          <div class="card-description1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <!-- Card for Engineering -->
+        <div class="card">
+          <h2>Engineering</h2>
+          <p>Spans mechanical, electrical, civil, aerospace, and chemical engineering.</p>
+          <a href="#">Explore Engineering</a>
         </div>
       </div>
-      <div class="cardsip">
-        <div class="card-text1">
-          <div class="card-title1">That's Another Card</div>
-          <div class="card-subtitle1">I don't really think that I need to explain anything here</div>
-          <div class="card-description1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </div>
-        <img src="media/sip/green3.webp" alt="Sample Image">
-      </div>
-      <div class="cardsip">
-        <img src="media/sip/green1.jpg" alt="Sample Image">
-        <div class="card-text1">
-          <div class="card-title1">And a Third Card</div>
-          <div class="card-subtitle1">You know what this is by now</div>
-          <div class="card-description1">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident.
+    </section>
+
+    <section id="faculty">
+      <h1>Our Publications</h1>
+      <div class="wrapper">
+        <div class="single-card">
+          <div class="img-area">
+            <img src="img/1.jpg" alt="faculty photo">
+          </div>
+          <div class="info">
+            <h3>Name</h3>
+            <p>research interest </p>
           </div>
         </div>
+
+        <div class="single-card">
+          <div class="img-area">
+            <img src="img/2.jpg" alt="faculty photo">
+          </div>
+          <div class="info">
+            <h3>Name</h3>
+            <p>research interest </p>
+          </div>
+        </div>
+
+        <div class="single-card">
+          <div class="img-area">
+            <img src="img/3.jpg" alt="faculty photo">
+          </div>
+          <div class="info">
+            <h3>Name</h3>
+            <p>research interest </p>
+          </div>
+        </div>
+        <div class="single-card">
+          <div class="img-area">
+            <img src="img/3.jpg" alt="faculty photo">
+          </div>
+          <div class="info">
+            <h3>Name</h3>
+            <p>research interest </p>
+          </div>
+        </div>
+
       </div>
+
+    </section>
+
+    <section id="patents">
+      <h2>Patents History</h2>
+      <p>List of significant patents achieved by the department.</p>
+    </section>
+
+    <section id="publications">
+      <h2>R&D Paper Publication History</h2>
+      <p>Highlights of notable research papers published by the department.</p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <h3>Contact Us</h3>
+      <p>For inquiries or collaboration, fill out the form below:</p>
+      <form action="submit.php" method="POST"> <!-- Example form action, replace with your own -->
+        <!-- Form fields -->
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
-  </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
   <script>
-// JavaScript to handle popup form
-document.getElementById('openFormBtn1').addEventListener('click', function() {
-    document.getElementById('popupForm1').style.display = 'flex';
-});
+      new kursor({
+          type: 1,
+          color: "rgba(128,0,128,0.45)",
+          removeDefaultCursor: true
 
-document.getElementById('openFormBtn2').addEventListener('click', function() {
-    document.getElementById('popupForm2').style.display = 'flex';
-});
-
-document.getElementById('openFormBtn3').addEventListener('click', function() {
-    document.getElementById('popupForm3').style.display = 'flex';
-});
-
-document.querySelectorAll('.closeBtn').forEach(btn => {
-    btn.addEventListener('click', function() {
-        btn.closest('.popup').style.display = 'none';
-    });
-});
-
-// Close the popup when clicking outside the form
-window.addEventListener('click', function(event) {
-    if (event.target.classList.contains('popup')) {
-        event.target.style.display = 'none';
-    }
-});
-
-
+      })
   </script>
-
-
+  <script src="script.js"></script>
 </body>
 
 </html>

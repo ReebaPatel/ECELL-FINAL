@@ -1,8 +1,11 @@
 #footer {
   width: 100%;
   /* min-height: 60vh; */
-  background-color: rgb(34, 72, 56);
-  /* animation: CSSscrollReveal 2s cubic-bezier(0.25, 0.1, 0.25, 1) both; 
+  background: linear-gradient(
+    180deg,
+    rgba(76, 241, 175, 0) 0%,
+    var(--primary-color) 100%
+  );  /* animation: CSSscrollReveal 2s cubic-bezier(0.25, 0.1, 0.25, 1) both; 
   animation-timeline: view();
   animation-range: entry 50% cover 0%;
   animation-duration: 2s; */
@@ -19,7 +22,7 @@
 }
 
 .info h1{
-    color: var(--primary-color)
+    color: white
   }
 
 .info p {
@@ -50,7 +53,7 @@
 }
 
 .logo h1 {
-  color: #4cf0b1;
+  color: white;
   margin-top: 10px;
   margin-left: 5px;
 }

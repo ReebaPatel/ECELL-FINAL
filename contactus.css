@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --font: "poppins";
+  --primary-color: rgb(153, 50, 165);
+}
 *{
   margin: 0;
   padding: 0;
@@ -40,7 +45,7 @@
   background: rgba(0, 0, 0, 0.7);
   border-radius: 12px;
   margin: 0 20px;
-  box-shadow: 0 0 10px 0 #4cf0b1, 0 0 20px 0 #4cf0b1, 0 0 30px 0 #4cf0b1;
+  box-shadow: 0 0 10px 0 var(--primary-color), 0 0 20px 0 var(--primary-color), 0 0 30px 0 var(--primary-color);
 }
 .contain .content{
   display: flex;
@@ -83,7 +88,7 @@
 }
 .content .input-box input:focus,
 .content .input-box input:valid{
-  border-color:#4cf0b1;
+  border-color:var(--primary-color);
   background-color: black;
   color: white;
 }
@@ -134,7 +139,7 @@
   transition :all 0.3s ease;
 }
 .content .message-box textarea:focus{
-  border-color:#4cf0b1;
+  border-color:var(--primary-color);
   background-color: black;
   color: white;
 }
@@ -157,7 +162,7 @@
 
 .content .input-box input[type="submit"]{
   color:black;
-  background:#4cf0b1;
+  background:var(--primary-color);
   padding-left: 0;
   font-size: 18px;
   font-weight: 500;
@@ -166,7 +171,7 @@
   transition: all 0.3s ease;
 }
 .content .input-box input[type="submit"]:hover{
-  background-color: #4cf0b1;
+  background-color: var(--primary-color);
 }
 @media (max-width:1000px) {
   .content .image-box{

@@ -19,13 +19,13 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  /* background: linear-gradient(to right, rgba(128,0,128,0.75), rgba(255,20,147,0.75), rgba(255,0,0,0.75)); */
-  background: linear-gradient(
+  background: linear-gradient(to right, rgba(128,0,128,0.75), rgba(255,20,147,0.75),rgba(128,0,128,0.75));
+  /* background: linear-gradient(
     to right,
-    rgba(13, 78, 53, 0.75),
-    rgba(76, 240, 177, 0.5),
-    rgba(13, 78, 53, 0.75)
-  );
+    rgba(60, 8, 98, 255),
+    rgba(183, 76, 240, 0.5),
+    rgba(60, 8, 98, 255)
+  ); */
 }
 .content {
   position: relative;
@@ -75,17 +75,16 @@ body {
   font-weight: 700;
   letter-spacing: 8px;
   margin-bottom: 20px;
-  background: rgba(13, 78, 53);
+  background: linear-gradient(to right, rgba(128,0,128,1), rgb(204, 16, 116), rgba(128,0,128,1));
+
   position: relative;
   animation-name: text;
   animation-duration: 4s;
-  
 }
-
 
 @keyframes text {
   0% {
-    color:  rgba(13, 78, 53);
+    color: var(--primary-color);
     margin-bottom: -40px;
   }
   30% {
@@ -98,6 +97,13 @@ body {
   }
   100% {
     margin-bottom: 20px;
-
   }
+}
+@media screen and (max-width:768px) {
+.text1{
+  font-size: 40px;
+}
+ .text2{
+  font-size: 15px;
+ }
 }

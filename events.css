@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --font: "poppins";
+  --primary-color:    rgb(153, 50, 165);
+  /* --primary-color:   rgba(128,0,128,1); */
+}
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -49,7 +56,7 @@ header img {
 
 .hero1 h1 {
     font-size: 48px;
-    color: #4cf0b1;
+    color: var(--primary-color);
 }
 
 .hero1 p {
@@ -58,7 +65,7 @@ header img {
 }
 
 .hero1 button {
-    background-color: #4cf0b1;
+    background-color: var(--primary-color);
     border: none;
     padding: 15px 30px;
     font-size: 18px;
@@ -70,12 +77,12 @@ header img {
 }
 
 .hero1 button:hover {
-    background-color: #4cf0b1;
+    background-color: var(--primary-color);
 }
 
 .hero2 h1 {
     font-size: 48px;
-    color: #4cf0b1;
+    color: var(--primary-color);
     float: right;
 }
 
@@ -86,7 +93,7 @@ header img {
 }
 
 .hero2 button {
-    background-color: #4cf0b1;
+    background-color: var(--primary-color);
     border: none;
     padding: 15px 30px;
     font-size: 18px;
@@ -99,7 +106,7 @@ header img {
 }
 
 .hero2 button:hover {
-    background-color: #4cf0b1;
+    background-color: var(--primary-color);
 }
 
 
@@ -137,7 +144,7 @@ transition: all 1s;
     border-radius: 50%;
     inset: calc(50% - var(--s)/3);
     /* cursor: pointer; */
-    --g: linear-gradient(#4cf0b1 0 0) no-repeat;
+    --g: linear-gradient(var(--primary-color) 0 0) no-repeat;
     background: var(--g) 50%/60% 3px, var(--g) 50%/3px 60%, #222;
     transition: 1.5s;
     -webkit-appearance: none;
@@ -151,7 +158,7 @@ transition: all 1s;
     border-radius: 50%;
     inset: calc(50% - var(--s)/3);
     /* cursor: pointer; */
-    --g: linear-gradient(#4cf0b1 0 0) no-repeat;
+    --g: linear-gradient(var(--primary-color) 0 0) no-repeat;
     background: var(--g) 50%/60% 3px, var(--g) 50%/3px 60%, #222;
     transition: 1.5s;
     -webkit-appearance: none;

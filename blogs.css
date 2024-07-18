@@ -2,7 +2,7 @@
 
 :root {
     --font:"poppins";
-    --primary-color: #4cf0b1;
+    --primary-color: rgb(153, 50, 165);
     --primary-rgb: rgb(76,240,177);
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .featured-story h1 {
-    color: #4cf0b1;
+    color: var(--primary-color);
 }
 
 .featured-story a {
@@ -55,7 +55,7 @@ body {
     text-align: center;
     margin: 20px 0;
 
-    color: #4cf0b1;
+    color: var(--primary-color);
     font-size: 90px;
 }
 
@@ -74,7 +74,7 @@ body {
     height: auto;
     width: 25%;
     margin: 30px;
-    box-shadow: #4cf0b1;
+    box-shadow: var(--primary-color);
     transition: box-shadow 0.3s ease-in-out;
     overflow: hidden;
     /* border-radius: 13px; */
