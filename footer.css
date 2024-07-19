@@ -133,7 +133,7 @@
   }
 
   .logo h1 {
-    color: #4cf0b1;
+    color: var(--primary-color);
     margin-top: 10px;
     font-size: 30px;
   }

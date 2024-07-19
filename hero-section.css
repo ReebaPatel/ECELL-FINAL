@@ -11,7 +11,7 @@ body {
 
 .background {
   position: relative;
-  height: 70vh;
+  height: 80vh;
 }
 .overlay {
   position: absolute;
@@ -19,7 +19,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, rgba(128,0,128,0.75), rgba(255,20,147,0.75),rgba(128,0,128,0.75));
+  background: linear-gradient(to right, rgba(128,0,128,0.75), rgb(126, 9, 126, 0.75), rgba(128,0,128,0.75));
   /* background: linear-gradient(
     to right,
     rgba(60, 8, 98, 255),
@@ -75,7 +75,7 @@ body {
   font-weight: 700;
   letter-spacing: 8px;
   margin-bottom: 20px;
-  background: linear-gradient(to right, rgba(128,0,128,1), rgb(204, 16, 116), rgba(128,0,128,1));
+  background: linear-gradient(to right, rgba(128,0,128,1), rgb(126, 9, 126), rgba(128,0,128,1));
 
   position: relative;
   animation-name: text;

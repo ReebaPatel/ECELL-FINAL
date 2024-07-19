@@ -1,74 +1,74 @@
 [
   {
     "name": "Trupti Lotlikar",
-    "position": "UX Designer",
+    "position": " IIC President",
     "email": "trupti@fcrit.ac.in",
     "image": "media/team/trupti.png"
   },
   {
     "name": "  Aqleem Siddique",
-    "position": "Software Engineer",
+    "position": " NIRF Coordinator ",
     "email": "aqleems@fcrit.ac.in",
     "image": "media/team/aqleem-sir.png"
   },
   {
+    "name": "Sushil Thale",
+    "position": "Convener Innovation Activity",
+    "email": "sushil@fcrit.ac.in",
+    "image": "media/team/sushil-thale.png"
+  },
+  {
     "name": "Badal ",
-    "position": "Product Manager",
+    "position": "Events Faculty Member",
     "email": "badal.@fcrit.ac.in",
     "image": "media/team/badal.png"
   },
   {
     "name": "Jennifer",
-    "position": "UX Designer",
+    "position": "Documentations ARIIA Coordinator",
     "email": "jennifer@fcrit.ac.in",
     "image": "media/team/jennifer.png"
   },
   {
     "name": "Mini Rajeev",
-    "position": "UX Designer",
+    "position": " Social Media",
     "email": "mini@fcrit.ac.in",
     "image": "media/team/mini-rajeev.png"
   },
   {
     "name": "Nilaj Deshmukh",
-    "position": "UX Designer",
+    "position": "IPR Activity Coordinator",
     "email": "nilajdeshmukh@fcrit.ac.in",
     "image": "media/team/nilajdeshmukh.png"
   },
   {
     "name": "Pranali Chaudhary",
-    "position": "UX Designer",
+    "position": "Startup Activity Coordinator",
     "email": "pranali@fcrit.ac.in",
     "image": "media/team/pranali-choudhary.png"
   },
   {
     "name": "Rane",
-    "position": "UX Designer",
+    "position": "Internship Activity Coordinator",
     "email": "rane@fcrit.ac.in",
     "image": "media/team/rane.png"
   },
   {
     "name": "Ruhci Harchandani",
-    "position": "UX Designer",
+    "position": "Operations Faculty Member",
     "email": "ruchi@fcrit.ac.in",
     "image": "media/team/ruchi-harchandani.png"
   },
   {
     "name": "Sharlene Robeiro",
-    "position": "UX Designer",
+    "position": "Finance Faculty Member",
     "email": "sharlene@fcrit.ac.in",
     "image": "media/team/sharlene.png"
   },
   {
     "name": "Smita Rukhande",
-    "position": "UX Designer",
+    "position": "Hospitality Faculty Member",
     "email": "smita@fcrit.ac.in",
     "image": "media/team/smita-rukhande.png"
-  },
-  {
-    "name": "Sushil Thale",
-    "position": "UX Designer",
-    "email": "sushil@fcrit.ac.in",
-    "image": "media/team/sushil-thale.png"
   }
 ]
